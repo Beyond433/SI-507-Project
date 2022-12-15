@@ -1,7 +1,7 @@
 # SI-507-Project
 
 # Project Summary
-An interactive program that lets user choose any active NBA player and get their injury data presented in a infographic manner.
+An interactive program that analyze the factors that affect the salary of NBA players.
 
 Data Source:
 Fox Sports: https://www.foxsports.com
