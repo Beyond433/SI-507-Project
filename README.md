@@ -4,8 +4,7 @@
 An interactive program that analyze the factors that affect the salary of NBA players.
 
 Data Source:
-Fox Sports: https://www.foxsports.com
-
+Espn Sports: https://www.espn.com/nba/
 # Instructions
 
 0) The program will utilize the online Plotly Website, please see this page if you do not have a plotly account set up. (https://plot.ly/python/getting-started/)
