@@ -7,9 +7,9 @@ Data Source:
 Espn Sports: https://www.espn.com/nba/
 # Instructions
 
-1) Run foxsports_nba_crawler.py to get the most recent data (This might take up to 15-20 minutes if no cache is available because there are more than 300 currently active nba players)
-2) Run foxsports_nba_database.py to create the database using the json file created from 1)
-3) Run foxsports_nba_plot.py and enjoy!
+1) Run nba_data.py to get the most recent data (This might take up to 20 minutes) and get a csv file
+2) Run nba_tree.py to create the tree structure and generate the json file nba.json
+3) Run nba_plot.py and enjoy!
 
 Optional: foxsports_nba_test.py is the unittest file for this project
 
