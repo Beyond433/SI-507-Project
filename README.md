@@ -13,24 +13,21 @@ Espn Sports: https://www.espn.com/nba/
 
 # How it works
 
-1) The program scrapes NBA Player data from Espn Sports, caches the html, and stores the useful data into a csv file (nba_player_injuries.json)
-2) The data from "nba_player_injuries.json" is used to create a sqlite database (nba_player_injuries.db).
-3) A separate dictionary file was created (injury_loc_dict.json) that maps common injury location (e.g., knee, ankle) to a certain coordinate.
-4) A Player object is created from injury data fetched from the database in 2), and it's then passed to the plot function which will map injury coordinates based on the dictionary in 3), then passed to Plotly.
-5) For injuries that are ambiguous (knee injury without specifying sides), they are all pushed to a single coordinate dedicated for vague injuries.
+1) The program scrapes NBA Player data from Espn Sports, caches the html, and stores the useful data into a csv file (nba.csv)
+2) The data from "nba.csv" is used to create a tree structure (nba.json).
+3) A Player object is created from injury data fetched from the database in 2), and it's then passed to the plot function which will map information coordinates based on the dictionary in 2), then passed to users.
 
 # Required Packages
-(* means should be built-in)
 
-- requests          (for requesting web-based data)
-- json*             (for encoding/decoding json formatted data)
-- bs4               (for parsing and navigating html texts)
-- datetime          (for creating timestamp for cache)
-- time*             (for pausing in between requests to avoid getting blocked by server)
-- re*               (regular expression, useful for finding things based on text patterns)
-- sqlite3*          (the chosen database format)
-- unidecode         (turns unique letters into one from the standard 26 letter alphabet; e.g., "è" is turned into "e")
-- plotly            (needed for plotting on plotly)
+- csv
+- selenium.webdriver
+- time      
+- selenium.webdriver.chrome.options
+
+- json
+- pandas
+
+- matplotlib.pyplot
 
 # User Interactions
 
